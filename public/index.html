@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud DevOps Todos API</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+        }
+        .endpoint {
+            background: white;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .method {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-weight: bold;
+            color: white;
+            margin-right: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .get { background-color: #61affe; }
+        .post { background-color: #49cc90; }
+        .put { background-color: #fca130; }
+        .delete { background-color: #f93e3e; }
+        .path {
+            font-family: monospace;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        pre {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: 'Consolas', 'Monaco', monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cloud DevOps Todos API</h1>
+    <p>Welcome to the Todos API documentation. Use the endpoints below to manage your tasks.</p>
+
+    <div class="endpoint">
+        <div>
+            <span class="method get">GET</span>
+            <span class="path">/health</span>
+        </div>
+        <p>Check if the API is running correctly.</p>
+    </div>
+
+    <div class="endpoint">
+        <div>
+            <span class="method get">GET</span>
+            <span class="path">/todos</span>
+        </div>
+        <p>Retrieve all todos.</p>
+    </div>
+
+    <div class="endpoint">
+        <div>
+            <span class="method get">GET</span>
+            <span class="path">/todos/:id</span>
+        </div>
+        <p>Retrieve a specific todo by ID.</p>
+    </div>
+
+    <div class="endpoint">
+        <div>
+            <span class="method post">POST</span>
+            <span class="path">/todos</span>
+        </div>
+        <p>Create a new todo.</p>
+        <pre><code>{
+    "title": "Learn Docker",
+    "completed": false
+}</code></pre>
+    </div>
+
+    <div class="endpoint">
+        <div>
+            <span class="method put">PUT</span>
+            <span class="path">/todos/:id</span>
+        </div>
+        <p>Update an existing todo.</p>
+        <pre><code>{
+    "title": "Learn Kubernetes",
+    "completed": true
+}</code></pre>
+    </div>
+
+    <div class="endpoint">
+        <div>
+            <span class="method delete">DELETE</span>
+            <span class="path">/todos/:id</span>
+        </div>
+        <p>Delete a todo by ID.</p>
+    </div>
+</body>
+</html>

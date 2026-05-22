@@ -1,0 +1,9 @@
+# all the files to ignore while building the Docker image
+node_modules
+.git
+.gitignore
+Dockerfile
+docker-compose.yml
+.env
+postman_collection.json
+express-startup.tar
