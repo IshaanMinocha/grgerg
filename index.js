@@ -92,7 +92,7 @@ const port = process.env.PORT || 3000;
 
 const isNodeEnvDevelopment = process.env.NODE_ENV === 'development';
 
-app.listen(port, () => {
+app.listen(port, "0.0.0.0", () => {
     console.log(`http://localhost:${port}`);
     if (isNodeEnvDevelopment) {
         console.log('Running in development mode');
