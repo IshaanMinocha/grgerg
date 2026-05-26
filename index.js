@@ -21,7 +21,7 @@ let currentId = 1;
 app.get('/health', (req, res) => {
     res.json({
         "status": true,
-        "message": "running correctly in docker v5"
+        "message": "running correctly in docker v6"
     });
 });
 
